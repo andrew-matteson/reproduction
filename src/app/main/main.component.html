@@ -1,0 +1,13 @@
+<button id="scenariosAddButton" pButton label="Add" (click)="addRow()"></button>
+
+<p-dataTable
+  [value]="scenarios"
+  [(selection)]="selectedScenario"
+  [editable]="true"
+>
+
+  <p-column [style]="&#123;'width':'38px'&#125;" selectionMode="single"></p-column>
+  <p-column field="description" header="Description" [editable]="true" ></p-column>
+  <p-column field="detail" header="Detail" [editable]="true" ></p-column>
+
+</p-dataTable>
